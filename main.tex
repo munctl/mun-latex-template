@@ -1,0 +1,29 @@
+%% Example usage of munresolution.cls
+%% Compile with XeLaTeX or LuaLaTeX
+
+\documentclass{munresolution}
+\usepackage{blindtext}
+
+\title{Resolution on Something Very Important}
+\author{The World}
+
+\begin{document}
+\renewcommand{\UNtopic}{Very Important Things}
+\renewcommand{\UNcommittee}{Committee on Important Things}
+
+\maketitle
+
+\begin{UNbody}
+\begin{preamb}
+  \preambclause[Concerned by]{\blindtext[1]}
+  \preambclause[Strongly convinced that]{\blindtext[1]}
+\end{preamb}
+
+\begin{operatives}
+  \operativeclause[Urges]{\blindtext[1]}
+  \operativeclauselast[Requests]{\blindtext[1]}
+\end{operatives}
+\end{UNbody}
+\UNendbar
+
+\end{document}
